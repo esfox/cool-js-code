@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carousel 1</title>
+  <link rel="stylesheet" href="carousel.css">
+  <style>
+    /* Declared internally just to be explicit. */
+    .carousel-image[data-index="0"] {
+      background-image: url("https://source.unsplash.com/random/1024x768");
+    }
+
+    .carousel-image[data-index="1"] {
+      background-image: url("https://source.unsplash.com/random/1024x768");
+    }
+
+    .carousel-image[data-index="2"] {
+      background-image: url("https://source.unsplash.com/random/1024x768");
+    }
+
+    .carousel-image[data-index="3"] {
+      background-image: url("https://source.unsplash.com/random/1024x768");
+    }
+
+    .carousel-image[data-index="4"] {
+      background-image: url("https://source.unsplash.com/random/1024x768");
+    }
+
+    /* For show only */
+    .sample-btn {
+      color: #e7e7e7;
+      font-size: 3rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="carousel" id="my-carousel">
+    <div class="previous-btn sample-btn">&#60;</div>
+    <div class="next-btn sample-btn">&#62;</div>
+    <div class="carousel-navigator">
+      <div class="carousel-btn carousel-btn-primary" data-target="0"></div>
+      <div class="carousel-btn carousel-btn-primary" data-target="1"></div>
+      <div class="carousel-btn carousel-btn-primary" data-target="2"></div>
+      <div class="carousel-btn carousel-btn-primary" data-target="3"></div>
+      <div class="carousel-btn carousel-btn-primary" data-target="4"></div>
+    </div>
+    <div class="carousel-images">
+      <div class="carousel-image active" data-index="0"></div>
+      <div class="carousel-image" data-index="1"></div>
+      <div class="carousel-image" data-index="2"></div>
+      <div class="carousel-image" data-index="3"></div>
+      <div class="carousel-image" data-index="4"></div>
+    </div>
+  </div>
+  <script src="carousel.js"></script>
+</body>
+</html>

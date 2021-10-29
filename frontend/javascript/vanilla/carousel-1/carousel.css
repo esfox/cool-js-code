@@ -1,0 +1,124 @@
+.carousel {
+  position: relative;
+  height: 501px; /* This is arbitrary. Configure as you wish. */
+}
+
+.carousel-images {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel .previous-btn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 7;
+}
+
+.carousel .next-btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 7;
+}
+
+.carousel-navigator {
+  position: absolute;
+  top: 102%;
+  z-index: 7;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-btn {
+  cursor: pointer;
+}
+
+.carousel-btn:not(:first-child) {
+  margin-left: 10px;
+}
+
+.carousel-btn-primary {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #A6A6A8;
+}
+
+.carousel-btn-primary.active {
+  border: unset !important;
+  background: #4c545c;
+}
+
+.carousel-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+}
+
+.carousel-image.active {
+  display: block;
+  z-index: 6;
+  -webkit-transform: translate(0%); /* Chrome, Opera 15+, Safari 3.1+ */
+  -moz-transform: translate(0%); /* Firefox 3.5+ */
+  -ms-transform: translate(0%); /* IE 9 */
+  -o-transform: translate(0%); /* Opera 10.5+ */
+  transform: translate(0%);
+  transition: transform 0.3s;
+}
+
+.carousel-image.prev {
+  display: block;
+  -webkit-transform: translate(-100%); /* Chrome, Opera 15+, Safari 3.1+ */
+  -moz-transform: translate(-100%); /* Firefox 3.5+ */
+  -ms-transform: translate(-100%); /* IE 9 */
+  -o-transform: translate(-100%); /* Opera 10.5+ */
+  transform: translate(-100%);
+  transition: transform 0.3s;
+}
+
+.carousel-image.next {
+  display: block;
+  -webkit-transform: translate(100%); /* Chrome, Opera 15+, Safari 3.1+ */
+  -moz-transform: translate(100%); /* Firefox 3.5+ */
+  -ms-transform: translate(100%); /* IE 9 */
+  -o-transform: translate(100%); /* Opera 10.5+ */
+  transform: translate(100%);
+  transition: transform 0.3s;
+}
+
+.carousel-image.force-prev {
+  display: block;
+  -webkit-transform: translate(-100%) !important; /* Chrome, Opera 15+, Safari 3.1+ */
+  -moz-transform: translate(-100%) !important; /* Firefox 3.5+ */
+  -ms-transform: translate(-100%) !important; /* IE 9 */
+  -o-transform: translate(-100%) !important; /* Opera 10.5+ */
+  transform: translate(-100%) !important;
+}
+
+.carousel-image.force-next {
+  display: block;
+  -webkit-transform: translate(100%) !important; /* Chrome, Opera 15+, Safari 3.1+ */
+  -moz-transform: translate(100%) !important; /* Firefox 3.5+ */
+  -ms-transform: translate(100%) !important; /* IE 9 */
+  -o-transform: translate(100%) !important; /* Opera 10.5+ */
+  transform: translate(100%) !important;
+}
+
+.carousel-image.exit-stage {
+  z-index: 5 !important;
+}
+
+.carousel-image.backstage {
+  z-index: 4 !important;
+}

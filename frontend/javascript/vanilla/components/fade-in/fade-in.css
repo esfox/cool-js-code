@@ -1,0 +1,19 @@
+.animate-fade-in {
+  opacity: 0;
+  -webkit-transform: translate(0px, 50px); /* Chrome, Opera 15+, Safari 3.1+ */
+  -moz-transform: translate(0px, 50px); /* Firefox 3.5+ */
+  -ms-transform: translate(0px, 50px); /* IE 9 */
+  -o-transform: translate(0px, 50px); /* Opera 10.5+ */
+  transform: translate(0px, 50px);
+  transition: transform 0.3s, opacity, 0.3s;
+}
+
+.animate-fade-in.in-viewport {
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px); /* Chrome, Opera 15+, Safari 3.1+ */
+  -moz-transform: translate(0px, 0px); /* Firefox 3.5+ */
+  -ms-transform: translate(0px, 0px); /* IE 9 */
+  -o-transform: translate(0px, 0px); /* Opera 10.5+ */
+  transform: translate(0px, 0px);
+  transition: transform 0.5s, opacity, 0.5s;
+}

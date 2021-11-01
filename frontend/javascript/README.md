@@ -1,1 +1,1 @@
-## Keep all js code in this folder ok pls ty
+## Keep all vanilla js code in this folder ok pls ty

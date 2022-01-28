@@ -1,9 +1,5 @@
-<!-- PLEASE READ: This component requires Tailwind CSS and the `classnames` package. -->
 <script>
-  import classNames from 'classnames';
-
   export let shown;
-  export let contentClass = '';
   export let withCloseButton = false;
 
   export const show = () => (shown = true);
@@ -52,9 +48,7 @@
           From: "opacity-100 translate-y-0 sm:scale-100"
           To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
       -->
-      <div class={classNames('transform', contentClass)}>
-        <slot />
-      </div>
+      <slot />
     </div>
   </div>
 {/if}
